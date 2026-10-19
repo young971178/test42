@@ -1934,7 +1934,6 @@ export default function App() {
                       <ChibiHunterCharacter
                         hunter={hunter}
                         isActive={isActive}
-                        wanderIndex={index % 4}
                         size="normal"
                       />
 
@@ -3334,7 +3333,6 @@ export default function App() {
                             <ChibiHunterCharacter
                               hunter={hunter}
                               isActive={isActive}
-                              wanderIndex={(index + 1) % 4}
                               size="compact"
                             />
                           </div>
