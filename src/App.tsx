@@ -13,7 +13,6 @@ import {
   Send,
   PlusCircle,
   ChevronRight,
-  Shield,
   Swords,
   TrendingUp,
   Cpu,
@@ -25,17 +24,11 @@ import {
   HeartHandshake,
   MessageSquare,
   X,
-  Factory,
-  Sliders,
-  Atom,
-  ShieldCheck,
-  Briefcase,
   Layers,
   ExternalLink,
   UserCheck,
   Maximize2,
-  Search,
-  Filter
+  Search
 } from 'lucide-react';
 
 // --- WEB AUDIO SFX ENGINE (Self-contained, zero-dependency) ---
@@ -929,14 +922,12 @@ const ALL_ROLES: CompanyFunction[] = [
 interface ChibiProps {
   hunter: HunterUser;
   isActive?: boolean;
-  wanderIndex?: number;
   size?: 'normal' | 'compact';
 }
 
 function ChibiHunterCharacter({
   hunter,
   isActive = false,
-  wanderIndex = 0,
   size = 'normal'
 }: ChibiProps) {
   const role = hunter.role;
